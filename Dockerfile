@@ -2,7 +2,7 @@ FROM node:8.12
 
 RUN mkdir /chain
 ADD package.json /chain/
-ADD main.js /chain/
+ADD src /chain/
 
 RUN cd /chain && npm install
 
